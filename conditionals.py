@@ -78,7 +78,7 @@
 ##ANOTHER WAY TO REVERSE A WORD:
 # word = input("Input a word to reverse: ")
 
-# for char in range(len(word) - 1, -1, -1):
+# for char in range(len(word) - 1, -1, -1): #The -1 takes one off the length, the other -1 is the end point, the final -1 is the step
 #   print(word[char], end="")
 # print("\n")
 
@@ -116,22 +116,43 @@
 # 60°C is 140 in Fahrenheit
 # 45°F is 7 in Celsius
 
-choice = input("Convert from Celcius or convert from Farenheit? c / f ")
-if choice == "c":
-    tempC = int(input("Please type the temperature degree in Celcius. "))
+# choice = input("Convert from Celcius or convert from Farenheit? c / f ")
+# if choice == "c":
+#     tempC = int(input("Please type the temperature degree in Celcius. "))
 
-    tempF = ((tempC/5)*9) + 32
-    print(str(tempC) + " degrees Celcius is " + str(tempF) + " degrees Farenheit.")
-elif choice == "f":
-    tempF = int(input("Please type the temperature degree in Farenheit. "))
+#     tempF = ((tempC/5)*9) + 32
+#     print(str(tempC) + " degrees Celcius is " + str(tempF) + " degrees Farenheit.")
+# elif choice == "f":
+#     tempF = int(input("Please type the temperature degree in Farenheit. "))
 
-    tempC = ((tempF - 32)/9)*5
-    print(str(tempF) + " degrees Farenheit is " + str(tempC) + " degrees Celcius.")
-else:
-    print("You didn't type a registered character. Please go back and type either c or f.")
+#     tempC = ((tempF - 32)/9)*5
+#     print(str(tempF) + " degrees Farenheit is " + str(tempC) + " degrees Celcius.")
+# else:
+#     print("You didn't type a registered character. Please go back and type either c or f.")
 
 #--------------------------------------
 #--------------------------------------
+# Write a Python program to count the number of even and odd numbers from a series of numbers. 
+# Sample numbers : numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+# Expected Output :
+# Number of even numbers : 5
+# Number of odd numbers : 4
+
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+
+length = len(numbers)
+evennumbers=0
+oddnumbers=0
+for i in range(length):
+    if i % 2 == 0:
+        evennumbers += 1
+    else:
+        oddnumbers +=1
+
+print("Even numbers: " + str(evennumbers))
+print("Odd numbers: " + str(oddnumbers))
+
+
 #--------------------------------------
 #--------------------------------------
 #--------------------------------------

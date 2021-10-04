@@ -138,23 +138,161 @@
 # Number of even numbers : 5
 # Number of odd numbers : 4
 
-numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+# numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
 
-length = len(numbers)
-evennumbers=0
-oddnumbers=0
-for i in range(length):
-    if i % 2 == 0:
-        evennumbers += 1
-    else:
-        oddnumbers +=1
+# length = len(numbers)
+# evennumbers=0
+# oddnumbers=0
+# for i in range(length):
+#     if i % 2 == 0:
+#         evennumbers += 1
+#     else:
+#         oddnumbers +=1
 
-print("Even numbers: " + str(evennumbers))
-print("Odd numbers: " + str(oddnumbers))
+# print("Even numbers: " + str(evennumbers))
+# print("Odd numbers: " + str(oddnumbers))
 
 
 #--------------------------------------
 #--------------------------------------
+#Write a Python program to find those numbers which are divisible by 7 and multiple of 5, 
+# between 1500 and 2700 (both included).
+
+# i = 1500
+# divisible = []
+
+# while i in range(1500,2700,1):
+#     if i % 7 == 0 and i % 5 == 0:
+#         divisible.append(i)
+#     i += 1
+
+# print(divisible)
+
+
+
 #--------------------------------------
 #--------------------------------------
 #--------------------------------------
+#yet another way of reversing a string
+# inputted = str(input("Insert 9 number?"))
+
+# strlen = len(inputted)
+
+# slicedString = inputted[strlen::-1]
+# print(slicedString)
+
+# palinVar = input("TYPE: ")
+
+# numChars = len(palinVar) -1
+# raVnilap = ''
+
+# while numChars >= 0:
+#     raVnilap = raVnilap + palinVar[numChars]
+#     numChars -= 1 #the opposite =- will erase the contents of the variable and set it to whatever is there
+
+# if raVnilap == palinVar:
+#     print("PALINDROME")
+# else:
+#     print("zan'nen")
+
+#-----------------
+## negative indexing.
+# t = 'abcd'
+# print(t[-1]) #returns d
+# print(t[:-1]) # returns abc
+
+# testVar = input('TEMPIN: ') #whatever
+# lastIndex = len(testVar) - 1
+# print(testVar[lastIndex]) #prints 'r'
+# print(testVar[0:(lastIndex)]) #prints 'whateve'
+
+#--------------------------------------
+#--------------------------------------
+
+#Write a Python program to guess a number between 1 to 9.
+#Note : User is prompted to enter a guess. 
+# #If the user guesses wrong then the prompt appears again until the guess is correct, 
+# #on successful guess, user will get a "Well guessed!" message, and the program will exit.
+
+# import random
+# random_num = random.randint(1,10)
+# guess = int(input("Please type a guess. "))
+
+# while random_num != guess:
+#     guess = int(input("Please keep guessing what the number may be! "))
+
+# print("Correct! The correct number was "+ str(random_num))
+
+#--------------------------------------
+#--------------------------------------
+
+#Write a Python program that prints each item and its corresponding type from the following list.
+
+# datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
+# for item in datalist:
+#     #print (f"Type of  {item} is {type(item)}") THIS IS ANOTHER WAY OF DOING IT
+#     print ("Type of",  item, " is ", type(item))
+
+##interesting, this doesn't work with + but does with ,
+##how to concatenate an unformatted string
+
+#--------------------------------------
+#--------------------------------------
+
+# Three ways to print mismached variable types
+
+# intVar = 10
+# floatVar = 12.5
+# stringVar = 'The two numbers are'
+# print(f"This is an fstring {stringVar}: {intVar} & {floatVar}")
+# print("This is a concat string" + stringVar  + " : " + str(intVar) + " & " + str(floatVar)) 
+# print("This is a comma concat string ", stringVar, " : ", intVar, " & ", floatVar)
+
+#--------------------------------------
+#--------------------------------------
+
+# temperature = input("Type any temperature you like. ")
+
+# if "C" in temperature.upper():
+#     print("CELCIUS")
+# if "F" in temperature.upper():
+#     print("FARENHEIT")
+
+#--------------------------------------
+#--------------------------------------
+
+# Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
+# Note : Use 'continue' statement.
+# Expected Output : 0 1 2 4 5
+
+# for i in range(0,6):
+#     if i == 3 or i== 6:
+#         continue
+#     print(i)
+
+#--------------------------------------
+#--------------------------------------
+
+#Write a Python program to get the Fibonacci series between 0 to 50.
+# Note : The Fibonacci Sequence is the series of numbers :
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, ....
+# Every next number is found by adding up the two numbers before it.
+# Expected Output : 1 1 2 3 5 8 13 21 34
+
+x = 0
+y = 1
+list = []
+list.append(x)
+list.append(y)
+
+while y<50:
+    y2 = x+y
+    x = y
+    #list.append(x)
+    list.append(y2)
+    y = y2
+
+print(list)
+
+
+    

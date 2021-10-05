@@ -134,17 +134,54 @@
 
 #---------------------------------------
 #---------------------------------------
+# Write a Python function to calculate the factorial of a number (a non-negative integer). 
+# The function accepts the number as an argument.
 
-#add to github --
+# def factorial(number):
+#     num = number
+#     total = 1
+#     for i in range(1, num+1):
+#         total = total * i
+#         #print(total)
+    
+#     return total
 
+# numero = int(input("What number? "))
+# number_factorial = factorial(numero)
 
-
+# print("The factorial of ", numero, " is ", number_factorial)
 
 #---------------------------------------
 #---------------------------------------
+#Write a Python function to check whether a number falls in a given range.
 
+# def in_range(chosen, range_list):
 
+#     number = chosen
+#     list = sorted(range_list)
+#     lowest = list[0]
+#     highest = list[1]
 
+#     if number in range(lowest, highest):
+#         return(1)
+#     else:
+#         return(0)
+
+# chosen_number = int(input("What number are you searching for? "))
+# range_nos = []
+# for i in range(2):
+#     chosen_range = int(input("What range are you searching within? "))
+#     range_nos.append(chosen_range)
+
+# answer = in_range(chosen_number, range_nos)
+# range_nos = sorted(range_nos)
+
+# if answer == 1:
+#     print(chosen_number, " is within the range of ", range_nos[0], " and ", range_nos[1], ".")
+# elif answer == 0:
+#     print(chosen_number, " is NOT within the range of ", range_nos[0], " and ", range_nos[1], ".")
+# else:
+#     "This code has not worked."
 
 
 #---------------------------------------

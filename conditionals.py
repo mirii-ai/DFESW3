@@ -279,20 +279,20 @@
 # Every next number is found by adding up the two numbers before it.
 # Expected Output : 1 1 2 3 5 8 13 21 34
 
-x = 0
-y = 1
-list = []
-list.append(x)
-list.append(y)
+# x = 0
+# y = 1
+# list = []
+# list.append(x)
+# list.append(y)
 
-while y<50:
-    y2 = x+y
-    x = y
-    #list.append(x)
-    list.append(y2)
-    y = y2
+# while y<50:
+#     y2 = x+y
+#     x = y
+#     #list.append(x)
+#     list.append(y2)
+#     y = y2
 
-print(list)
+# print(list)
 
 
     

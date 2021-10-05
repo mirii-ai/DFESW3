@@ -229,26 +229,128 @@
 #Write a Python function that takes a list 
 # and returns a new list with unique elements of the first list.
 
-def find_unique(list):
+# def find_unique(flist):
+#     new = flist
+#     unique_list=[]
+#     for item in new:
+#         if item not in unique_list:
+#             unique_list.append(item)
+#         else:
+#             continue
     
+#     return(unique_list)
 
 
+# times = int(input("How many items would you like to insert? "))
+# input_list = []
 
+# for i in range(times):
+#     number = int(input("Please type a number you'd like to input. "))
+#     input_list.append(number)
 
+# unique_list = find_unique(input_list)
+
+# print("ORIGINAL LIST: ", input_list)
+# print("UNIQUE LIST: ", unique_list)
 
 #---------------------------------------
 #---------------------------------------
+# Write a Python function that takes a number as a parameter and check the number is prime or not.
+# Note : A prime number (or a prime) is a natural number greater than 1 and 
+# that has no positive divisors other than 1 and itself.
 
+# def is_prime(check):
+#     numero = check
+#     other = 0
+#     for i in range(1, numero+1):
+#         if numero % i == 0:
+#             other += 1
+#     other -= 2 #to take away the iterations of 1 and itself
 
+#     if other == 0:
+#         return(1)
+#     else:
+#         return(0)
+    
+# number = int(input("What number would you like to check? "))
+
+# answer = is_prime(number)
+
+# if answer == 1:
+#     print("The number ", number, " is a prime number.")
+# elif answer == 0:
+#     print("The number ", number, " is NOT a prime number.")
+# else:
+#     print("This code has not worked.")
 
 #---------------------------------------
 #---------------------------------------
+# Write a Python program to print the even numbers from a given list.
 
+# def even_number(inputt):
+#     list = inputt
+#     evens = []
+#     for number in list:
+#         if number % 2 == 0:
+#             evens.append(number)
+    
+#     return(evens)
 
+# times = int(input("How many items would you like to insert? "))
+# input_list = []
+
+# for i in range(times):
+#     number = int(input("Please type a number you'd like to input. "))
+#     input_list.append(number)
+
+# evens_only = even_number(input_list)
+
+# print("ORIGINAL LIST: ", input_list)
+# print("EVEN NUMBERS: ", evens_only)
 
 #---------------------------------------
 #---------------------------------------
+# Write a Python function to check whether a number is perfect or not.
+# According to Wikipedia : In number theory, a perfect number is a positive integer that is equal
+# to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the 
+# number itself (also known as its aliquot sum). 
+# Equivalently, a perfect number is a number that is half the sum of all of its positive divisors 
+# (including itself).
+# Example : The first perfect number is 6, because 1, 2, and 3 are its proper positive divisors,
+# and 1 + 2 + 3 = 6. Equivalently, the number 6 is equal to half the sum of all its positive divisors: 
+# ( 1 + 2 + 3 + 6 ) / 2 = 6. The next perfect number is 28 = 1 + 2 + 4 + 7 + 14. 
+# This is followed by the perfect numbers 496 and 8128.
 
+# def find_perfect(number):
+#     numero = number
+
+#     divisors = []
+#     for i in range(1, numero):
+#         if numero % i == 0:
+#             divisors.append(i)
+    
+#     print("NUMBERS THAT GO INTO ", numero, ": ", divisors)
+
+#     total = 0
+#     for number in divisors:
+#         total += number
+    
+#     print("The added total for the divisors of ", numero, " is ", total, ".")
+#     if total == numero:
+#         return(1)
+#     else:
+#         return(0)
+    
+# number = int(input("What number would you like to check? "))
+
+# answer = find_perfect(number)
+
+# if answer == 1:
+#     print("The number ", number, " is a perfect number.")
+# elif answer == 0:
+#     print("The number ", number, " is NOT a perfect number.")
+# else:
+#     print("The code has not worked.")
 
 
 #---------------------------------------

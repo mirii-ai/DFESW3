@@ -183,11 +183,85 @@
 # else:
 #     "This code has not worked."
 
+#---------------------------------------
+#---------------------------------------
+#Write a Python function that accepts a string and 
+# calculates the number of upper case letters and lower case letters.
+
+#-_-_-_-_-_-_-_
+# for character in string:
+#     if character.isdigit():
+#         print("Found a number!")
+#     else:
+#         print("hmmmmm")
+#-_-_-_-_-_-_-_
+    
+# def count_cases(string):
+#     newstring = []
+#     for character in string: #this bit makes sure there are no numbers in the string. If there is, they are removed
+#         if not character.isdigit():
+#             newstring.append(character)
+
+#     completed = ""
+#     complete= completed.join(newstring)
+
+
+#     upper_case = 0
+#     lower_case = 0
+#     for character in complete:
+#         if character.isupper():
+#             upper_case += 1
+#         elif character.islower():
+#             lower_case += 1
+    
+#     return(complete, upper_case, lower_case)
+
+# string = input("Please type anything you like. : ")
+
+# absolute, upper, lower = count_cases(string)
+
+# print("Your string: ", absolute)
+# print("UPPER CASE LETTERS: ", upper)
+# print("LOWER CASE LETTERS: ", lower)
+
+#---------------------------------------
+#---------------------------------------
+#Write a Python function that takes a list 
+# and returns a new list with unique elements of the first list.
+
+def find_unique(list):
+    
+
+
+
+
 
 #---------------------------------------
 #---------------------------------------
 
 
+
+#---------------------------------------
+#---------------------------------------
+
+
+
+#---------------------------------------
+#---------------------------------------
+
+
+
+#---------------------------------------
+#---------------------------------------
+
+
+
+#---------------------------------------
+#---------------------------------------
+
+
+#---------------------------------------
+#---------------------------------------
 
 
 
